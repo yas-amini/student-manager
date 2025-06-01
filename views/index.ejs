@@ -17,24 +17,14 @@
         </tr>
       </thead>
       <tbody>
+        <% students.forEach(student => { %>
         <tr>
-          <td>Jane</td>
-          <td>Doe</td>
-          <td>Jane@doe.com</td>
-          <td>070-1234567</td>
+          <td><%= student.firstName %></td>
+          <td><%= student.lastName %></td>
+          <td><%= student.email %></td>
+          <td><%= student.phone %></td>
         </tr>
-        <tr>
-          <td>Jane</td>
-          <td>Doe</td>
-          <td>Jane@doe.com</td>
-          <td>070-1234567</td>
-        </tr>
-        <tr>
-          <td>Jane</td>
-          <td>Doe</td>
-          <td>Jane@doe.com</td>
-          <td>070-1234567</td>
-        </tr>
+        <% }); %>
       </tbody>
     </table>
   </body>
